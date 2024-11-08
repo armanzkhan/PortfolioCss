@@ -1,0 +1,121 @@
+/* Contact.css */
+.contact-container {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+  }
+  
+  .contact-form-container {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;          /* Restrict max width for larger screens */
+    width: 100%;               /* Full width for smaller screens */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #0047ab;  /* Primary color */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+  textarea {
+    height: 150px;
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .submit-button {
+    background-color: #0047ab;
+    color: white;
+    font-size: 1.125rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%; /* Make button full-width on small screens */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #003d8e;
+  }
+  
+  .submit-button:active {
+    background-color: #003170;
+  }
+  
+  /* Media Queries */
+  
+  /* For Tablets */
+  @media screen and (max-width: 768px) {
+    .contact-form-container {
+      padding: 25px;  /* Slightly reduce padding on smaller screens */
+    }
+  
+    h2 {
+      font-size: 1.75rem; /* Smaller font size for tablet */
+      margin-bottom: 15px; /* Adjust space below heading */
+    }
+  
+    .input-group input,
+    .input-group textarea {
+      font-size: 1rem; /* Ensure readability on smaller screens */
+    }
+  
+    .submit-button {
+      font-size: 1rem; /* Adjust button font size for tablets */
+      padding: 10px 16px; /* Reduce button padding */
+    }
+  }
+  
+  /* For Mobile Devices */
+  @media screen and (max-width: 480px) {
+    .contact-form-container {
+      margin-right: 25px;
+      padding: 15px; 
+      max-width: 60%; /* Even smaller padding on mobile */
+    }
+  
+    h2 {
+      font-size: 1.25rem; /* Even smaller heading size for mobile */
+      margin-bottom: 10px;
+    }
+  
+    .input-group input,
+    .input-group textarea {
+      padding: 8px;  /* Smaller padding on mobile devices */
+      font-size: 0.825rem;  /* Slightly smaller font for form fields */
+    }
+  
+    .submit-button {
+      font-size: 0.95rem; /* Reduce button text size */
+      padding: 8px 12px; /* Adjust button padding for mobile */
+    }
+  }
+  

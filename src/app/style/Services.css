@@ -1,0 +1,108 @@
+.services-container {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .services-title {
+    font-size: 2rem; /* Use rem for scalable font size */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .services-boxes-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allow for wrapping on small screens */
+    gap: 30px; /* Spacing between service cards */
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .service-card {
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .service-card-title {  /* Rename for clarity */
+    font-size: 1.25rem;  /* Scalable font size */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .service-desc {
+    font-size: 0.875rem; /* Font size for readability */
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .services-boxes-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 80%; /* Adjust width for smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .services-title {
+      font-size: 1.75rem; /* Scalable title for smaller screens */
+    }
+  
+    .service-card-title {
+      font-size: 1.125rem; /* Adjust service card title font size */
+    }
+  
+    .service-desc {
+      font-size: 0.875rem; /* Adjust description font size */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .services-title {
+      font-size: 1.5rem; /* Even smaller font for very small screens */
+    }
+  
+    .service-card-title {
+      font-size: 1rem; /* Scalable font size for service title */
+    }
+  
+    .service-desc {
+      font-size: 0.75rem; /* Ensure the description text is readable */
+    }
+  
+    .service-icon {
+      width: 50px; /* Adjust icon size for small screens */
+      height: 50px;
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,92 @@
+/* about.css */
+main {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;             /* Use flexbox to center content */
+    flex-direction: column;    /* Stack items vertically */
+    align-items: center;       /* Center items horizontally */
+    justify-content: center;   /* Optionally center content vertically */
+    text-align: center;        /* Ensure text is always centered */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Larger font for headings */
+    color: #0047ab;  /* Example primary color */
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    max-width: 800px;        /* Limit the width of paragraphs for readability */
+    margin: 0 auto 30px;     /* Center the paragraphs horizontally */
+    padding: 0 15px;         /* Add some padding for mobile screens */
+    color: #555;
+    text-align: justify;     /* Justified text for larger screens */
+  }
+  
+  p:last-child {
+    font-weight: 500;
+    color: #0047ab;  /* Use the same color as h1 for emphasis */
+  }
+  
+  /* Media Query for Tablets and Smaller Screens (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    main {
+      padding: 30px 15px; /* Reduce padding for smaller screens */
+    }
+  
+    h1 {
+      font-size: 2rem; /* Smaller font for mobile */
+      margin-bottom: 20px; /* Less margin on small screens */
+    }
+  
+    p {
+      font-size: 1rem; /* Smaller font for readability on mobile */
+      margin-bottom: 20px; /* Space between paragraphs */
+    }
+  
+    p:last-child {
+      font-size: 1rem; /* Ensure all paragraphs are consistent on small screens */
+    }
+  }
+  
+  /* Media Query for Mobile Devices (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    main {
+      padding: 20px 10px; /* Even smaller padding for mobile devices */
+      margin-right: 10px;
+    }
+  
+    h1 {
+      font-size: 1.75rem; /* Smaller font size for mobile */
+      margin-bottom: 15px; /* Adjust margin for better spacing */
+    }
+  
+    p {
+      font-size: 0.95rem; /* Make text a bit smaller for very small screens */
+      line-height: 1.6; /* Adjust line height for better legibility */
+      margin-bottom: 15px; /* Adjust spacing between paragraphs */
+    }
+  
+    p:last-child {
+      font-size: 0.95rem; /* Consistency in font size */
+    }
+  }
+  
+  /* Further adjustments for extra-small screens */
+  @media screen and (max-width: 375px) {
+    h1 {
+      font-size: 1.5rem; /* Reduce heading font size for very small screens */
+      margin-bottom: 10px; /* Reduce space between heading and content */
+    }
+  
+    p {
+      font-size: 0.875rem; /* Further reduce font size */
+      margin-bottom: 10px; /* Reduce space between paragraphs */
+    }
+  }
+  
