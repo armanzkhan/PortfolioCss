@@ -1,4 +1,5 @@
 import "../style/Services.css";
+import Image from "next/image";
 
 const Services = () => {
   return (
@@ -7,7 +8,7 @@ const Services = () => {
       <div className="services-boxes-container">
         {/* Service 1 */}
         <div className="service-card">
-          <img
+          <Image
             src="/images/react.jpg"
             alt="React"
             className="service-icon"
@@ -20,7 +21,7 @@ const Services = () => {
         </div>
         {/* Service 2 */}
         <div className="service-card">
-          <img
+          <Image
             src="/images/next.png"
             alt="Next.js"
             className="service-icon"
@@ -33,7 +34,7 @@ const Services = () => {
         </div>
         {/* Service 3 */}
         <div className="service-card">
-          <img
+          <Image
             src="/images/ts.jpg"
             alt="TypeScript"
             className="service-icon"
@@ -46,7 +47,7 @@ const Services = () => {
         </div>
         {/* Service 4 */}
         <div className="service-card">
-          <img
+          <Image
             src="/images/tailwind.jpg"
             alt="Tailwind CSS"
             className="service-icon"

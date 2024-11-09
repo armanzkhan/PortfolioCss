@@ -18,7 +18,7 @@ const Hero = () => {
         {/* Right */}
         <div className="hero-right-div">
           <h1 className="title-hero">
-            I'm Arman Zaman, Front-end <br /> Developer
+            I&#39;m Arman Zaman, Front-end <br /> Developer
           </h1>
           <p className="hero-desc">
             I specialize in building dynamic and responsive websites using
